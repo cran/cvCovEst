@@ -1,6 +1,6 @@
 Package: cvCovEst
 Title: Cross-Validated Covariance Matrix Estimation
-Version: 0.3.1
+Version: 0.3.4
 Authors@R: c(
     person("Philippe", "Boileau", email = "philippe_boileau@berkeley.edu",
            role = c("aut", "cre", "cph"),
@@ -23,12 +23,13 @@ Description: An efficient cross-validated approach for covariance matrix
     estimation, particularly useful in high-dimensional settings. This
     method relies upon the theory of loss-based estimator selection to
     identify the optimal estimator of the covariance matrix from among a
-    prespecified set of candidate.
-Depends: R (>= 3.6.0)
-Imports: matrixStats, Matrix, stats, methods, origami, MASS, coop,
-        Rdpack, rlang, dplyr, stringr, purrr, tibble, assertthat,
-        RSpectra, future, future.apply, ggplot2, ggpubr, RColorBrewer
-Suggests: testthat, knitr, rmarkdown, covr, spelling
+    prespecified set of candidates.
+Depends: R (>= 4.0.0)
+Imports: matrixStats, Matrix, stats, methods, origami, coop, Rdpack,
+        rlang, dplyr, stringr, purrr, tibble, assertthat, RSpectra,
+        ggplot2, ggpubr, RColorBrewer
+Suggests: future, future.apply, MASS, testthat, knitr, rmarkdown, covr,
+        spelling
 License: MIT + file LICENSE
 URL: https://github.com/PhilBoileau/cvCovEst
 BugReports: https://github.com/PhilBoileau/cvCovEst/issues
@@ -39,7 +40,7 @@ RoxygenNote: 7.1.1
 RdMacros: Rdpack
 Language: en-US
 NeedsCompilation: no
-Packaged: 2021-02-14 19:03:45 UTC; philippe
+Packaged: 2021-03-03 16:59:52 UTC; philippe
 Author: Philippe Boileau [aut, cre, cph]
     (<https://orcid.org/0000-0002-4850-2507>),
   Nima Hejazi [aut] (<https://orcid.org/0000-0002-7127-2789>),
@@ -49,4 +50,4 @@ Author: Philippe Boileau [aut, cre, cph]
   Sandrine Dudoit [ctb, ths] (<https://orcid.org/0000-0002-6069-8629>)
 Maintainer: Philippe Boileau <philippe_boileau@berkeley.edu>
 Repository: CRAN
-Date/Publication: 2021-02-14 21:50:02 UTC
+Date/Publication: 2021-03-06 23:50:32 UTC
