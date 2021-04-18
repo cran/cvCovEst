@@ -1,7 +1,7 @@
-bf54bdf3d64f924c1bb9bcea9c049add *DESCRIPTION
+a66a85cc21943139e3163ee395668159 *DESCRIPTION
 68e59d9540f2cb399743c2d6c3e53c4a *LICENSE
 c93bcfda3cf9ed6a9c16b713fa1e955f *NAMESPACE
-e1fbcc57ed280ed6dffeb65e76280882 *NEWS.md
+e3831209c7c11127b1d8d79e380f1e58 *NEWS.md
 faa67e83c6afcc509ebc34580e4fed43 *R/checkArgs.R
 447223d412c53e939b3c8b58ea08be73 *R/checkPlotSumArgs.R
 d58f282ccc58234cc4d210bd32d4c6d8 *R/cvCovEst.R
@@ -16,12 +16,12 @@ bff344dd32224801feb1dbaf67976f2a *R/summary_functions.R
 a69129ff0f91108bea5e3ed12ae4560d *R/thresholdingFunctions.R
 fbd561066f7c0134025de316ff85f5af *R/zzz.R
 c8f8350ed9388cf48fc2564be343bfd2 *README.md
-1b773128816ec0db771939a40bae8512 *build/partial.rdb
+2e9ffbd1013ed421c6ad0482d3b52537 *build/partial.rdb
 a805aea1a1eeeac2b20c21d958c03203 *build/vignette.rds
 37c248e99cc8fd0922d97d9fb00447ef *inst/REFERENCES.bib
 a9a1d550d05eac1fe8495b64e16ac2c8 *inst/doc/using_cvCovEst.R
 f1b30b686bba1200e61bfbddf8f01adf *inst/doc/using_cvCovEst.Rmd
-ebe5c176ad56dc3e360048a7837f9da0 *inst/doc/using_cvCovEst.html
+4c5b0242cae6f8a95a96f280502600ae *inst/doc/using_cvCovEst.html
 716481ab53a8ba1f63bb4704ee4d1d5b *man/adaptiveLassoEst.Rd
 f9dd7a7c76672b73bb1b880c4983a800 *man/adaptiveLassoThreshold.Rd
 793b7d333a80f41717f49201e1efc0d4 *man/bandingEst.Rd
