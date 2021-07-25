@@ -9,6 +9,7 @@ status](https://travis-ci.com/PhilBoileau/cvCovEst.svg?token=YL3L6rYQtszHibWHgFx
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![status](https://joss.theoj.org/papers/f5b2acdf578c341195b6ec6f25b4f09d/status.svg)](https://joss.theoj.org/papers/f5b2acdf578c341195b6ec6f25b4f09d)
 [![MIT
 license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
@@ -88,17 +89,17 @@ cv_cov_est_out <- cvCovEst(
 # NOTE: the estimated covariance matrix is accessible via the `$estimate` slot
 cv_cov_est_out$risk_df
 #> # A tibble: 9 x 3
-#>   estimator            hyperparameters      empirical_risk
-#>   <chr>                <chr>                         <dbl>
-#> 1 linearShrinkLWEst    hyperparameters = NA           357.
-#> 2 poetEst              lambda = 0.2, k = 1            369.
-#> 3 poetEst              lambda = 0.2, k = 2            372.
-#> 4 poetEst              lambda = 0.1, k = 2            375.
-#> 5 poetEst              lambda = 0.1, k = 1            376.
-#> 6 denseLinearShrinkEst hyperparameters = NA           379.
-#> 7 sampleCovEst         hyperparameters = NA           379.
-#> 8 thresholdingEst      gamma = 0.2                    384.
-#> 9 thresholdingEst      gamma = 2                      826.
+#>   estimator            hyperparameters      cv_risk
+#>   <chr>                <chr>                  <dbl>
+#> 1 linearShrinkLWEst    hyperparameters = NA    357.
+#> 2 poetEst              lambda = 0.2, k = 1     369.
+#> 3 poetEst              lambda = 0.2, k = 2     372.
+#> 4 poetEst              lambda = 0.1, k = 2     375.
+#> 5 poetEst              lambda = 0.1, k = 1     376.
+#> 6 denseLinearShrinkEst hyperparameters = NA    379.
+#> 7 sampleCovEst         hyperparameters = NA    379.
+#> 8 thresholdingEst      gamma = 0.2             384.
+#> 9 thresholdingEst      gamma = 2               826.
 ```
 
 ------------------------------------------------------------------------

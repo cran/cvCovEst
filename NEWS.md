@@ -1,4 +1,36 @@
-# cvCovEst 0.3.4 (2021-02-24)
+# cvCovEst 1.0.0 (2021-07-24)
+
++ `cvCovEst()` no longer accepts the `true_cov_mat` argument.
++ `cvCovEst` is now ready for publication through JOSS.
+
+# cvCovEst 0.3.8 (2021-07-24)
+
++ Fixing formatting errors in `inst/REFERENCES.bib`
++ Addressing typos and bibliography errors in JOSS paper draft
++ Updating `pkgdown` documentation
++ Creating a GitHub release. Subsequent versions of the package won't accept
+  "true" covariance matrices as an argument to `cvCovEst()`. This is the last
+  version of `cvCovEst` that can be used to reproduce the simulation results
+  of the accompanying manuscript, "Cross-Validated Loss-Based Covariance Matrix
+  Estimator Selection in High Dimensions".
+
+# cvCovEst 0.3.7 (2021-07-03)
+
++ Calling `summary.cvCovEst()` when a single summary function is
+  specified now immediately returns a table instead of a list of length 1 that
+  contains said table.
++ Tables returned by `summary.cvCovEst()` no longer have `dplyr` groups.
++ Fixed typo in Toy Dataset Example section of paper.
+
+# cvCovEst 0.3.6 (2021-06-19)
+
++ Renamed `empirical_risk` column in `risk_df` table output by `cvCovEst()` to
+  `cv_risk`.
++ Added additional citations of existing R packages for covariance matrix
+  estimation in our JOSS submission.
++ Added more comprehensive tests for the available loss functions.
+
+# cvCovEst 0.3.5 (2021-02-24)
 
 + Setting 'LazyLoad' to 'false' in DESCRIPTION to address CRAN checks notes.
 

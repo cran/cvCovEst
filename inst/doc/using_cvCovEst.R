@@ -33,8 +33,6 @@ cv_cov_est_out$risk_df
 cv_cov_est_out$estimate[1:5, 1:5]
 
 ## ----toep-sim-----------------------------------------------------------------
-library(MASS)
-library(cvCovEst)
 set.seed(1584)
 
 toep_sim <- function(p, rho, alpha) {
@@ -67,20 +65,18 @@ sim_dat <-  MASS::mvrnorm(n = 75, mu = rep(0, 100), Sigma = sim_covmat)
 cv_cov_est_sim <- cvCovEst(
   dat = sim_dat,
   estimators = c(
-    linearShrinkEst, thresholdingEst,
-    bandingEst, adaptiveLassoEst,
-    sampleCovEst),
+    linearShrinkEst, thresholdingEst, bandingEst, adaptiveLassoEst,
+    sampleCovEst, taperingEst
+  ),
   estimator_params = list(
     linearShrinkEst = list(alpha = seq(0.25, 0.75, 0.05)),
     thresholdingEst = list(gamma = seq(0.25, 0.75, 0.05)),
     bandingEst = list(k = seq(2L, 10L, 2L)),
-    adaptiveLassoEst = list(lambda = c(0.1, 0.25, 0.5, 0.75, 1),
-                            n = seq(1, 5))),
-  cv_loss = cvMatrixFrobeniusLoss,
+    adaptiveLassoEst = list(lambda = c(0.1, 0.25, 0.5, 0.75, 1), n = seq(1, 5)),
+    taperingEst = list(k = seq(2L, 10L, 2L))
+  ),
   cv_scheme = "v_fold",
-  v_folds = 5,
-  center = TRUE,
-  scale = TRUE
+  v_folds = 5
 )
 
 ## ----summary-sim--------------------------------------------------------------
