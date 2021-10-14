@@ -1,6 +1,6 @@
 Package: cvCovEst
 Title: Cross-Validated Covariance Matrix Estimation
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
     person("Philippe", "Boileau", email = "philippe_boileau@berkeley.edu",
            role = c("aut", "cre", "cph"),
@@ -40,7 +40,7 @@ RoxygenNote: 7.1.1
 RdMacros: Rdpack
 Language: en-US
 NeedsCompilation: no
-Packaged: 2021-07-24 18:19:59 UTC; philippe
+Packaged: 2021-10-14 14:50:35 UTC; philippe
 Author: Philippe Boileau [aut, cre, cph]
     (<https://orcid.org/0000-0002-4850-2507>),
   Nima Hejazi [aut] (<https://orcid.org/0000-0002-7127-2789>),
@@ -50,4 +50,4 @@ Author: Philippe Boileau [aut, cre, cph]
   Sandrine Dudoit [ctb, ths] (<https://orcid.org/0000-0002-6069-8629>)
 Maintainer: Philippe Boileau <philippe_boileau@berkeley.edu>
 Repository: CRAN
-Date/Publication: 2021-07-25 13:30:06 UTC
+Date/Publication: 2021-10-14 15:20:02 UTC
