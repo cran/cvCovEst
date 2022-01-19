@@ -80,7 +80,7 @@ cv_cov_est_sim <- cvCovEst(
 )
 
 ## ----summary-sim--------------------------------------------------------------
-cv_sum <- summary(cv_cov_est_sim)
+cv_sum <- summary(cv_cov_est_sim, dat_orig = sim_dat)
 cv_sum$bestInClass
 
 ## ----hyperRisk-sim------------------------------------------------------------
