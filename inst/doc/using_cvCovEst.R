@@ -59,7 +59,7 @@ toep_sim <- function(p, rho, alpha) {
 sim_covmat <- toep_sim(p = 100, rho = 0.6, alpha = 0.3)
 
 # sample 75 observations from multivariate normal mean = 0, var = sim_covmat
-sim_dat <-  MASS::mvrnorm(n = 75, mu = rep(0, 100), Sigma = sim_covmat)
+sim_dat <-  MASS::mvrnorm(n = 100, mu = rep(0, 100), Sigma = sim_covmat)
 
 # run CV-selector
 cv_cov_est_sim <- cvCovEst(
@@ -84,7 +84,7 @@ cv_sum <- summary(cv_cov_est_sim, dat_orig = sim_dat)
 cv_sum$bestInClass
 
 ## ----hyperRisk-sim------------------------------------------------------------
-cv_sum$hyperRisk$bandingEst
+cv_sum$hyperRisk$taperingEst
 
 ## ----risk-sim, fig.height = 3.5, fig.width=4----------------------------------
 plot(cv_cov_est_sim, dat_orig = sim_dat, plot_type = "risk")
@@ -99,7 +99,7 @@ plot(cv_cov_est_sim, dat_orig = sim_dat, plot_type = "heatmap",
 
 ## ----samp-heat-sim, fig.height=3.5, fig.width=5-------------------------------
 plot(cv_cov_est_sim, dat_orig = sim_dat, plot_type = "heatmap",
-     estimator = c("bandingEst", "sampleCovEst"),
+     estimator = c("taperingEst", "sampleCovEst"),
      stat = c("min"), abs_v = FALSE)
 
 ## ----eigen-sim, fig.height = 3.5, fig.width=5---------------------------------
@@ -109,9 +109,9 @@ plot(cv_cov_est_sim, dat_orig = sim_dat, plot_type = "eigen",
 ## ----multi-eigen-sim, fig.height=4.5, fig.width=6-----------------------------
 plot(cv_cov_est_sim, dat_orig = sim_dat, plot_type = "eigen",
      stat = c("min", "median", "max"),
-     estimator = c("bandingEst", "thresholdingEst", "linearShrinkEst",
+     estimator = c("taperingEst", "bandingEst", "linearShrinkEst",
                     "adaptiveLassoEst"))
 
-## ----plot-summary, fig.height=7, fig.width=7.5--------------------------------
+## ----plot-summary, fig.height=8, fig.width=8.5--------------------------------
 plot(cv_cov_est_sim, dat_orig = sim_dat)
 
