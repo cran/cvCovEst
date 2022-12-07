@@ -3,7 +3,7 @@
 
 <!-- badges: start -->
 
-\[![CircleCI](https://app.circleci.com/pipelines/github/PhilBoileau/cvCovEst?branch=master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/PhilBoileau/cvCovEst/tree/master.svg?style=svg)](https://app.circleci.com/pipelines/github/PhilBoileau/cvCovEst?branch=master)
 [![codecov](https://codecov.io/gh/PhilBoileau/cvCovEst/branch/master/graph/badge.svg?token=miHiqpGXxJ)](https://app.codecov.io/gh/PhilBoileau/cvCovEst)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
@@ -81,7 +81,7 @@ cv_cov_est_out <- cvCovEst(
     ),
     cv_loss = cvMatrixFrobeniusLoss,
     cv_scheme = "v_fold",
-    v_folds = 5,
+    v_folds = 5
   )
 
 # print the table of risk estimates
@@ -140,14 +140,19 @@ package.
 When describing or discussing the theory underlying the `cvCovEst`
 method, or simply using the method, please cite the pre-print below.
 
-    @misc{boileau2021,
-          title={Cross-Validated Loss-Based Covariance Matrix Estimator Selection in High Dimensions}, 
-          author={Philippe Boileau and Nima S. Hejazi and Mark J. van der Laan and Sandrine Dudoit},
-          year={2021},
-          eprint={2102.09715},
-          archivePrefix={arXiv},
-          primaryClass={stat.ME}
-    }
+    @article{boileau2022,
+        author = {Philippe Boileau and Nima S. Hejazi and Mark J. van der Laan and Sandrine Dudoit},
+        doi = {10.1080/10618600.2022.2110883},
+        eprint = {https://doi.org/10.1080/10618600.2022.2110883},
+        journal = {Journal of Computational and Graphical Statistics},
+        number = {ja},
+        pages = {1-28},
+        publisher = {Taylor & Francis},
+        title = {Cross-Validated Loss-Based Covariance Matrix Estimator Selection in High Dimensions},
+        url = {https://doi.org/10.1080/10618600.2022.2110883},
+        volume = {0},
+        year = {2022},
+        bdsk-url-1 = {https://doi.org/10.1080/10618600.2022.2110883}}
 
 ------------------------------------------------------------------------
 
