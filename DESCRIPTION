@@ -1,6 +1,6 @@
 Package: cvCovEst
 Title: Cross-Validated Covariance Matrix Estimation
-Version: 1.2.0
+Version: 1.2.1
 Authors@R: c(
     person("Philippe", "Boileau", email = "philippe_boileau@berkeley.edu",
            role = c("aut", "cre", "cph"),
@@ -22,9 +22,10 @@ Authors@R: c(
   )
 Description: An efficient cross-validated approach for covariance matrix
     estimation, particularly useful in high-dimensional settings. This
-    method relies upon the theory of loss-based estimator selection to
-    identify the optimal estimator of the covariance matrix from among a
-    prespecified set of candidates.
+    method relies upon the theory of high-dimensional loss-based covariance
+    matrix estimator selection developed by Boileau et al. (2022)
+    <doi:10.1080/10618600.2022.2110883> to identify the optimal estimator
+    from among a prespecified set of candidates.
 Depends: R (>= 4.0.0)
 Imports: matrixStats, Matrix, stats, methods, origami, coop, Rdpack,
         rlang, dplyr, stringr, purrr, tibble, assertthat, RSpectra,
@@ -40,7 +41,7 @@ RoxygenNote: 7.2.2
 RdMacros: Rdpack
 Language: en-US
 NeedsCompilation: no
-Packaged: 2022-12-07 20:52:58 UTC; philippe
+Packaged: 2023-06-22 23:43:54 UTC; philippe
 Author: Philippe Boileau [aut, cre, cph]
     (<https://orcid.org/0000-0002-4850-2507>),
   Nima Hejazi [aut] (<https://orcid.org/0000-0002-7127-2789>),
@@ -50,4 +51,4 @@ Author: Philippe Boileau [aut, cre, cph]
   Sandrine Dudoit [ctb, ths] (<https://orcid.org/0000-0002-6069-8629>)
 Maintainer: Philippe Boileau <philippe_boileau@berkeley.edu>
 Repository: CRAN
-Date/Publication: 2022-12-07 21:30:02 UTC
+Date/Publication: 2023-06-23 10:00:02 UTC

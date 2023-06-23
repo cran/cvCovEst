@@ -10,7 +10,7 @@ state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![DOI](https://joss.theoj.org/papers/10.21105/joss.03273/status.svg)](https://doi.org/10.21105/joss.03273)
 [![MIT
-license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/license/mit/)
 <!-- badges: end -->
 
 > Cross-Validated Covariance Matrix Estimation
@@ -158,7 +158,7 @@ method, or simply using the method, please cite the pre-print below.
 
 ## License
 
-© 2020-2022 [Philippe Boileau](https://pboileau.ca)
+© 2020-2023 [Philippe Boileau](https://pboileau.ca)
 
 The contents of this repository are distributed under the MIT license.
 See file

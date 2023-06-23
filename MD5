@@ -1,7 +1,7 @@
-118e1c3f452abe68b271e1091cd154d2 *DESCRIPTION
-68e59d9540f2cb399743c2d6c3e53c4a *LICENSE
+6b8b2f9510bbfea1560521c2476274c1 *DESCRIPTION
+5cb5c02e740d2e7c6b71e1b8bd37f01f *LICENSE
 7dc85bb2f3d60c6106517d2fda5df1d8 *NAMESPACE
-506f653b7a554926f6b5bba9635aaba3 *NEWS.md
+b0b0dec011ad4d68fa3aaac9ba83e61a *NEWS.md
 31822d60d48af82f31121ba575749ae5 *R/checkArgs.R
 447223d412c53e939b3c8b58ea08be73 *R/checkPlotSumArgs.R
 e94f28a1da0c79f4f0ff50f7c6fb39ef *R/cvCovEst.R
@@ -15,14 +15,14 @@ d8a2f73806e443a2f77fc9bc281e6f1e *R/safeColScale.R
 ab00d2d84732375f76fae1d28dffdea3 *R/summary_functions.R
 b13a098541265136a45311fb99c821f9 *R/thresholdingFunctions.R
 fbd561066f7c0134025de316ff85f5af *R/zzz.R
-b0191d031d6934bb7ee9eae6c6ab894b *README.md
-f17467d2b2cbc8de87d64a4752a77166 *build/partial.rdb
+67b01241405c275c9259ddffe269433c *README.md
+cbdcedc1f2882c6dfa8a9b60c8da2e0e *build/partial.rdb
 c1df33fdfaa8bfada450f3e8df2f62ca *build/vignette.rds
 fd2916080a3a4d4b5c7947ce0979645b *inst/CITATION
 8b038bc3ec7b236799f1cee881215627 *inst/REFERENCES.bib
 8858d12a3949e7e36169659251776808 *inst/doc/using_cvCovEst.R
 59b0ebf02273514f26f9be6bd094559c *inst/doc/using_cvCovEst.Rmd
-3f83c23d81882904fbfa86d62a6e420b *inst/doc/using_cvCovEst.html
+864ad9ab93e05e41e2b86808401071b2 *inst/doc/using_cvCovEst.html
 716481ab53a8ba1f63bb4704ee4d1d5b *man/adaptiveLassoEst.Rd
 f9dd7a7c76672b73bb1b880c4983a800 *man/adaptiveLassoThreshold.Rd
 793b7d333a80f41717f49201e1efc0d4 *man/bandingEst.Rd
@@ -76,7 +76,7 @@ ad6f4a4c7b556dc6c3a96a60253a256a *man/thresholdingEst.Rd
 cc298e1e2052e06d390c1051b7d79ac1 *tests/testthat.R
 981e1624ff022e84160f1b09707e4dc7 *tests/testthat/test-checkArgs.R
 cd483bcefd111f55817697b3388cec51 *tests/testthat/test-cvCovEst.R
-7a9bffc0f86baf0dec699ac13bee9957 *tests/testthat/test-estimators.R
+7822459fe63e71709e3c7a2ed329ee9b *tests/testthat/test-estimators.R
 754f30bdb097e46cbf92d97f7556862d *tests/testthat/test-foldFunctions.R
 4fd6dba488b151e27fd079f3f45ebcec *tests/testthat/test-plot-functions.R
 0023ac47910829b38f73bc093475ab3c *tests/testthat/test-safeColScale.R
